@@ -54,6 +54,12 @@ include("functions.php");
   <p>
     Click any marker to see the observations linked to that location.
   </p>
+
+  <p>
+    <a>[l]</a> links to a location<br />
+    <a>[r]</a> links to a personreconstruction<br />
+    <a>[d]</a> links to a document<br />
+  </p>
 </div>
 
 
