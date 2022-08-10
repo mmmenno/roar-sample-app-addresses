@@ -37,7 +37,7 @@ include("functions.php");
 
 <div id="intro">
   
-  <h1>Family map</h1>
+  <h1><a style="color:#000;" href="/">Family map</a></h1>
 
   <p>
     This map shows addresses and places of birth &amp; death of - amongst others - some members of my family.
