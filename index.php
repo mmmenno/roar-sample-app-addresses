@@ -36,7 +36,30 @@ include("functions.php");
 
 
 <div id="intro">
-  <h1>Mapping roar</h1>
+  
+  <h1>Family map</h1>
+
+  <p>
+    This map shows addresses and places of birth &amp; death of - amongst others - some members of my family.
+  </p>
+
+  <p>
+    All data is 'document-based', which means I only added data found in online documents I could link to.
+  </p> 
+
+  <p>
+    Using only these observations, I 'reconstructed' the lives of people like <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr1')" href="http://localhost:1111/#r=http://gendata.denengelse.nl/pr1">my grandmother</a>, who came from Austria to work as a maid in Amsterdam and <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr2')"  href="#r=http://gendata.denengelse.nl/pr2">Izaäk Lob</a>, one of her employers.
+  </p>
+
+  <p>
+    Click any marker to see the observations linked to that location.
+  </p>
+</div>
+
+
+
+<div id="content">
+  <h1>The roar ontology</h1>
 
   <p>
     When describing persons and locations, it's important to distinguish observations (as found in a document) from reconstructions (combined data from multiple observations you consider to be about the same person).
@@ -49,16 +72,6 @@ include("functions.php");
   <p>
     Read more on the data, modelling and the way reconstructions were made on the <a href="">github data repo</a>.
   </p>
-
-  <p>
-    Click any marker to see the observations linked to that location.
-  </p>
-</div>
-
-
-
-<div id="content">
-  Hier kan nog wat
 </div>
 
 

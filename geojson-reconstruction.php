@@ -115,14 +115,14 @@ foreach ($points as $v) {
 	);
 
 	if($i == 0){
-		$other = 200;
+		$other = 255;
 	}else{
-		$step = round(200 / (count($points)-1));
-		$other = 200 - ($i * $step);
+		$step = round(255 / (count($points)-1));
+		$other = 255 - ($i * $step);
 	}
 	
 	$props = array(
-		"color" => "255," . $other . "," . $other
+		"color" => "150," . $other . "," . $other
 		//"color" => $other . "," . $other . "," . $other
 	);
 	
