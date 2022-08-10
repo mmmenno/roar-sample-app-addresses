@@ -48,7 +48,7 @@ include("functions.php");
   </p> 
 
   <p>
-    Using only these observations, I 'reconstructed' the lives of people like <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr1')" href="http://localhost:1111/#r=http://gendata.denengelse.nl/pr1">my grandmother</a>, who came from Austria to work as a maid in Amsterdam and <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr2')"  href="#r=http://gendata.denengelse.nl/pr2">Izaäk Lob</a>, one of her employers.
+    Using only these observations, I 'reconstructed' the lives of people like <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr1')" href="#r=http://gendata.denengelse.nl/pr1">my grandmother</a>, who came from Austria to work as a maid in Amsterdam and <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr2')"  href="#r=http://gendata.denengelse.nl/pr2">Izaäk Lob</a>, one of her employers.
   </p>
 
   <p>
