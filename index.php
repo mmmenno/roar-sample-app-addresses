@@ -66,11 +66,11 @@ include("functions.php");
   </p>
 
   <p>
-    The <a href="">roar ontology</a> was developed to do just that. Here we showcase how address data, birth- and deathdates found in archival documents can be used to create personreconstructions, visualised as lines on the map.
+    The <a href="https://w3id.org/roar/">roar ontology</a> was developed to do just that. Here we showcase how address data, birth- and deathdates found in archival documents can be used to create personreconstructions, visualised as lines on the map.
   </p> 
 
   <p>
-    Read more on the data, modelling and the way reconstructions were made on the <a href="">github data repo</a>.
+    Read more on the data, modelling and the way reconstructions were made on the <a href="https://github.com/mmmenno/roar-samples">github data repo</a>.
   </p>
 </div>
 
