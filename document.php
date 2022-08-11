@@ -68,7 +68,7 @@ foreach ($data['results']['bindings'] as $k => $v) {
 		echo $v['plabel']['value'] . " ";
 	}
 	if(isset($v['pr']['value'])){
-		echo " <a href=\"" . $v['pr']['value'] . "\">[r]</a>";
+		echo " <a href=\"" . $v['pr']['value'] . "\">R</a>";
 	}
 	if(isset($v['plabel'])){
 		echo "<br />";
@@ -85,7 +85,7 @@ foreach ($data['results']['bindings'] as $k => $v) {
 		echo $v['loclabel']['value'] . "";
 	}
 	if(isset($v['geowithin']['value'])){
-		echo " <a href=\"" . $v['geowithin']['value'] . "\">[l]</a>";
+		echo " <a href=\"" . $v['geowithin']['value'] . "\">L</a>";
 	}
 	
 	echo "<br /><em>a " . str_replace("https://w3id.org/roar#","roar:",$v['type']['value']) . "</em>";

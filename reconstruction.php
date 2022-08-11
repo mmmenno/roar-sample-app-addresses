@@ -138,7 +138,7 @@ foreach ($bddata['results']['bindings'] as $k => $v) {
 	}
 	if(isset($v['bplace']['value'])){
 		echo " in <strong>" . $v['bplacelabel']['value'] . "</strong>";
-		echo " <a href=\"" . $v['bplace']['value'] . "\">[l]</a>";
+		echo " <a href=\"" . $v['bplace']['value'] . "\">L</a>";
 	}
 	echo "</li>";
 
@@ -159,7 +159,7 @@ foreach ($data['results']['bindings'] as $k => $v) {
 		echo " to " . $v['end']['value'] . "";
 	}
 	echo ":<br /><strong>" . $v['loclabel']['value'] . "</strong>";
-	echo " <a href=\"" . $v['locwithuri']['value'] . "\">[l]</a>";
+	echo " <a href=\"" . $v['locwithuri']['value'] . "\">L</a>";
 	echo "</li>";
 }
 
@@ -177,7 +177,7 @@ foreach ($bddata['results']['bindings'] as $k => $v) {
 	}
 	if(isset($v['dplace']['value'])){
 		echo " in <strong>" . $v['dplacelabel']['value'] . "</strong>";
-		echo " <a href=\"" . $v['dplace']['value'] . "\">[l]</a>";
+		echo " <a href=\"" . $v['dplace']['value'] . "\">L</a>";
 	}
 	echo "</li>";
 
@@ -195,7 +195,7 @@ foreach ($bddata['results']['bindings'] as $k => $v) {
 foreach ($docdata['results']['bindings'] as $k => $v) {
 	//echo $v['doclabel']['value'] . "";
 	echo " <a target=\"_blank\" href=\"" . $v['doc']['value'] . "\">" . $v['doclabel']['value'] . "</a>";
-	echo " <a href=\"" . $v['doc']['value'] . "\">[d]</a>";
+	echo " <a class=\"btn\" href=\"" . $v['doc']['value'] . "\">D</a>";
 	echo "<br />";
 
 }
@@ -211,9 +211,9 @@ foreach ($docdata['results']['bindings'] as $k => $v) {
 foreach ($sharesdata['results']['bindings'] as $k => $v) {
 	//echo $v['doclabel']['value'] . "";
 	echo $v['withinloclabel']['value'] . " ";
-	echo " <a href=\"" . $v['withinloc']['value'] . "\">[l]</a> with ";
+	echo " <a class=\"btn\" href=\"" . $v['withinloc']['value'] . "\">L</a> with ";
 	echo $v['litname2']['value'] . " ";
-	echo " <a href=\"" . $v['person2']['value'] . "\">[r]</a>";
+	echo " <a class=\"btn\" href=\"" . $v['person2']['value'] . "\">R</a>";
 	echo "<br />";
 
 }

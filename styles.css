@@ -78,6 +78,16 @@ a{
 	color: #de0000;
 	text-decoration: none;
 }
+ul a, a.btn{
+	background-color: #de0000;
+	color: #fff;
+	display: inline-block;
+	margin: 1px 3px;
+	width: 16px;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+}
 ul{
 	padding: 0;
 }

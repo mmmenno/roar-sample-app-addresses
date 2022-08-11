@@ -107,9 +107,9 @@ foreach ($eventdata['results']['bindings'] as $k => $v) {
 	}
 	echo $v['litname']['value'] . "";
 	if(isset($v['pr']['value'])){
-		echo " <a href=\"" . $v['pr']['value'] . "\">[r]</a>";
+		echo " <a href=\"" . $v['pr']['value'] . "\">R</a>";
 	}
-	echo "\n<br /><em>a roar:PersonObservation documented in '" . $v['doclabel']['value'] . "'</em> <a href=\"" . $v['doc']['value'] . "\">[d]</a>";
+	echo "\n<br /><em>a roar:PersonObservation documented in '" . $v['doclabel']['value'] . "'</em> <a href=\"" . $v['doc']['value'] . "\">D</a>";
 	echo "</li>";
 }
 
@@ -121,7 +121,7 @@ foreach ($bewonerdata['results']['bindings'] as $k => $v) {
 	echo ", residential address of<br />";
 	echo $v['litname']['value'] . "";
 	if(isset($v['pr']['value'])){
-		echo " <a href=\"" . $v['pr']['value'] . "\">[r]</a>";
+		echo " <a href=\"" . $v['pr']['value'] . "\">R</a>";
 	}
 	if(isset($v['start']['value'])){
 		echo " from " . $v['start']['value'] . "";
@@ -129,7 +129,7 @@ foreach ($bewonerdata['results']['bindings'] as $k => $v) {
 	if(isset($v['end']['value'])){
 		echo " until " . $v['end']['value'] . "";
 	}
-	echo "\n<br /><em>a roar:LocationObservation linked to this location, documented in '" . $v['doclabel']['value'] . "'</em> <a href=\"" . $v['doc']['value'] . "\">[d]</a>";
+	echo "\n<br /><em>a roar:LocationObservation linked to this location, documented in '" . $v['doclabel']['value'] . "'</em> <a href=\"" . $v['doc']['value'] . "\">D</a>";
 	echo "</li>";
 }
 

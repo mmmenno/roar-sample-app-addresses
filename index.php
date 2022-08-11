@@ -55,10 +55,11 @@ include("functions.php");
     Click any marker to see the observations linked to that location.
   </p>
 
+  <h5>Buttons link to ..</h5>
   <p>
-    <a>[l]</a> links to a location<br />
-    <a>[r]</a> links to a personreconstruction<br />
-    <a>[d]</a> links to a document<br />
+    <a class="btn">L</a> a location<br />
+    <a class="btn">R</a> a personreconstruction<br />
+    <a class="btn">D</a> a document<br />
   </p>
 </div>
 
@@ -202,15 +203,15 @@ function updContentBehaviour(){
     var href = $(this).attr('href');
     var txt = $(this).text();
 
-    if(txt == "[r]"){
+    if(txt == "R"){
       e.preventDefault();
       loadReconstruction(href);
       window.location.hash = "r=" + href;
-    }else if(txt == "[l]"){
+    }else if(txt == "L"){
       e.preventDefault();
       loadLocation(href);
       window.location.hash = "l=" + href;
-    }else if(txt == "[d]"){
+    }else if(txt == "D"){
       e.preventDefault();
       loadDocument(href);
       window.location.hash = "d=" + href;
