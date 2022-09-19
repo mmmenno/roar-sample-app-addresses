@@ -7,7 +7,7 @@ include("functions.php");
 <html>
 <head>
   
-<title>mapping lives</title>
+<title>mapping migrations</title>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +37,7 @@ include("functions.php");
 
 <div id="intro">
   
-  <h1><a style="color:#000;" href="https://hicsuntleones.nl/family-map/">Family map</a></h1>
+  <h1><a style="color:#000;" href="https://hicsuntleones.nl/migrations/">Migrations</a></h1>
 
   <p>
     This map shows addresses and places of birth &amp; death of - amongst others - some members of my family.

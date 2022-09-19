@@ -36,7 +36,7 @@ $reclabel = $data['results']['bindings'][0]['litname']['value'];
 //print_r($data);
 
 //die;
-
+// birth, death, sameas
 $sparql = "
 PREFIX schema: <http://schema.org/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
@@ -46,6 +46,7 @@ PREFIX roar: <https://w3id.org/roar#>
 PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
 PREFIX pnv: <https://w3id.org/pnv#>
 PREFIX bio: <http://purl.org/vocab/bio/0.1/> 
+PREFIX owl:	<http://www.w3.org/2002/07/owl#>
 SELECT * WHERE {
 	optional {
   	<" . $_GET['uri'] . "> bio:birth ?birth .
@@ -64,7 +65,11 @@ SELECT * WHERE {
 	    ?dplace rdfs:label ?dplacelabel .
 	    ?dplace geo:hasGeometry/geo:asWKT ?dwkt .
 	  }
-  }} 
+  }
+  optional {
+  	<" . $_GET['uri'] . "> owl:sameAs ?sameas .
+  }
+} 
 ";
 
 
@@ -102,7 +107,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX roar: <https://w3id.org/roar#>
 PREFIX sem: <http://semanticweb.cs.vu.nl/2009/11/sem/>
 PREFIX pnv: <https://w3id.org/pnv#>
-SELECT * WHERE {
+SELECT ?withinloc ?person2 ?litname2 ?withinloclabel WHERE {
   <" . $_GET['uri'] . "> roar:hasLocation ?loc .
   ?loc rdfs:label ?loclabel .
   ?loc geo:geoWithin ?withinloc .
@@ -112,8 +117,10 @@ SELECT * WHERE {
   ?withinloc rdfs:label ?withinloclabel .
   FILTER(?person2 != <" . $_GET['uri'] . ">)
 }
+GROUP BY ?withinloc ?person2 ?litname2 ?withinloclabel
 ";
 
+//echo $sparql;
 
 $json = getSparqlResults($endpoint,$sparql);
 $sharesdata = json_decode($json,true);
@@ -124,6 +131,14 @@ $sharesdata = json_decode($json,true);
 <h1><?= $reclabel ?></h1>
 
 <?= str_replace("http://gendata.denengelse.nl/",":",$_GET['uri']) ?>
+
+<?php
+foreach ($bddata['results']['bindings'] as $k => $v) {
+	if(isset($v['sameas']['value'])){
+		echo "<br /><br />sameAs <a target=\"_blank\" href=\"" . $v['sameas']['value'] . "\">" . $v['sameas']['value'] . "</a><br />";
+	}
+}
+?>
 
 <h3>a roar:PersonReconstruction</h3>
 
