@@ -37,7 +37,7 @@ include("functions.php");
 
 <div id="intro">
   
-  <h1><a style="color:#000;" href="https://hicsuntleones.nl/migrations/">Migrations</a></h1>
+  <h1><a style="color:#000;" href="https://hicsuntleones.nl/migrations/">Migration Map</a></h1>
 
   <p>
     This map shows addresses and places of birth &amp; death of - amongst others - some members of my family.
@@ -48,7 +48,7 @@ include("functions.php");
   </p> 
 
   <p>
-    Using only these observations, I 'reconstructed' the lives of people like <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr1')" href="#r=http://gendata.denengelse.nl/pr1">my grandmother</a>, who came from Austria to work as a maid in Amsterdam and <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr2')"  href="#r=http://gendata.denengelse.nl/pr2">Izaäk Lob</a>, one of her employers.
+    Using only these observations, I 'reconstructed' the whereabouts of people like <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr1')" href="#r=http://gendata.denengelse.nl/pr1">my grandmother</a>, who came from Austria to work as a maid in Amsterdam and <a onclick="loadReconstruction('http://gendata.denengelse.nl/pr2')"  href="#r=http://gendata.denengelse.nl/pr2">Izaäk Lob</a>, one of her employers.
   </p>
 
   <p>
