@@ -184,7 +184,10 @@ include("functions.php");
   }
 
 function whenClicked(){
+  
   $("#content").show();
+  $("#content").html('');
+  $("#content").append('<div class="loader"></div>');
 
   var props = $(this)[0].feature.properties;
   
@@ -199,6 +202,9 @@ function whenClicked(){
 function updContentBehaviour(){
   
   $('#content a').click(function(e) {
+
+    $("#content").html('');
+    $("#content").append('<div class="loader"></div>');
     
     var href = $(this).attr('href');
     var txt = $(this).text();
