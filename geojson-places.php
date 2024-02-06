@@ -32,7 +32,7 @@ foreach ($data['results']['bindings'] as $k => $v) {
 	$loc = array("type"=>"Feature");
 	$props = array(
 		"uri" => $v['loc']['value'],
-		"label" => "not yet labeled",
+		"label" => "not labeled",
 		"cnt" => 0
 	);
 	
