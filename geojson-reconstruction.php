@@ -138,7 +138,7 @@ $json = json_encode($fc);
 
 //file_put_contents("geojson-" . $scape . "/" . $qcountry . '.geojson', $json);
 
-
+header('Content-Type: application/json; charset=utf-8');
 echo $json;
 
 
